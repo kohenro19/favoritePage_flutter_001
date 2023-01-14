@@ -41,6 +41,7 @@ class ItemTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Provider.of<Favorites>(context) で親Widgetからデータを受け取る
     var favoritesList = Provider.of<Favorites>(context);
 
     return Padding(

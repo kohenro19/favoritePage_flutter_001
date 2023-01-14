@@ -45,6 +45,7 @@ class FavoriteItemTile extends StatelessWidget {
           key: Key('remove_icon_$itemNo'),
           icon: Icon(Icons.close),
           onPressed: () {
+            // 親Widgetで Provider<Favorites>.value() を使いデータを渡す
             Provider.of<Favorites>(context, listen: false).remove(itemNo);
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
